@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise3</title>
+    <link href = "style.css" rel="stylesheet" type = "text/css"/>
+</head>
+<body>
+    <form action = "customerBackend.php" method = "POST">
+        <h1 id = "h1">
+            Welcome to my Book Store!
+        </h1>
+        <p id = "p1">
+            Please Enter your Email and Password!<br>
+        </p>
+        Email<input type = "email" name = "email" required>
+        Password<input type = "password" name = "password" required><br>
+        <br><br><br>
+
+        <p id = "p2">What would You like to Buy Today?<br>And how many?(select 0 if not purchasing the category)</p>
+        Adventure book($3)<input type = "number" name = "advBook" required min = "0"><br>
+        Mystery book($5)<input type = "number" name ="msytBook" required min = "0"><br>
+        Vampire Romance book($7)<input type = "number" name = "vrBook" required min = "0"><br><br><br>
+
+        <p id = "p3">What kind of shipping do you want?</p>
+        Free 7 day<input type = "radio" id = "free" name = "shipping">
+        $5.00 three day<input type = "radio" id = "threeDay" name = "shipping">
+        $50.00 over night<input type = "radio" id ="overNight" name = "shipping">
+
+        <br><br>
+
+        <input type = "reset">
+        <input type = "submit" onclick="validateInput()">
+
+    </form>
+    <script src = "formChecker.js"></script>
+</body>
+</html>
